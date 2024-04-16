@@ -43,6 +43,9 @@ jobs:
       - name: Install Helloword
         run: |
           echo "src-git helloworld https://github.com/fw876/helloworld" >> ./feeds.conf.default 
+      - name: Install sirpdboy
+        run: |
+          echo "src-git sirpdboy https://github.com/sirpdboy/sirpdboy-package" >> ./feeds.conf.default
       - name: Install OpenClash
         run: |
           mkdir package/luci-app-openclash
